@@ -1,0 +1,43 @@
+version: 0.0
+os: linux
+files:
+  - source: /dist
+    destination: /data/mobi-otc-h5/dist
+  - source: /ansible
+    destination: /data/mobi-otc-h5/ansible
+  - source: /appspec.yml
+    destination: /data/mobi-otc-h5/
+permissions:
+  - object: /data
+    pattern: "mobi-otc-h5"
+    owner: nginx
+    group: root
+    mode: 554
+    type:
+      - directory
+  - object: /data/mobi-otc-h5
+    pattern: "dist"
+    owner: nginx
+    group: root
+    mode: 554
+    type:
+      - directory
+  - object: /data/mobi-otc-h5/dist
+    pattern: "**"
+    owner: nginx
+    group: root
+    mode: 664
+    type:
+      - file
+  - object: /data/mobi-otc-h5/ansible/scripts
+    pattern: "**"
+    owner: nginx
+    group: root
+    mode: 755
+    type:
+      - file
+hooks:
+   AfterInstall:
+       - location: ansible/scripts/after_install.sh
+         timeout: 3600
+

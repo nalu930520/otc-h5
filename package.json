@@ -1,0 +1,61 @@
+{
+  "name": "mobi-otc-h5",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:staging": "vue-cli-service build --mode staging",
+    "build:production": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@types/fastclick": "^1.0.28",
+    "axios": "^0.18.0",
+    "better-scroll": "^1.12.5",
+    "bignumber.js": "^7.2.1",
+    "cssnano": "^4.0.3",
+    "deepmerge": "^2.1.1",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.2",
+    "postcss-aspect-ratio-mini": "^0.0.2",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.1.0",
+    "postcss-px-to-viewport": "^0.0.3",
+    "postcss-url": "^7.3.2",
+    "postcss-viewport-units": "^0.1.4",
+    "postcss-write-svg": "^3.0.1",
+    "register-service-worker": "^1.0.0",
+    "sass-loader": "^7.0.3",
+    "store": "^2.0.12",
+    "ts-import-plugin": "^1.5.4",
+    "vant": "^1.1.13",
+    "vue": "^2.5.16",
+    "vue-class-component": "^6.0.0",
+    "vue-clipboard2": "^0.2.1",
+    "vue-i18n": "^8.0.0",
+    "vue-m-message": "^1.0.0",
+    "vue-property-decorator": "^6.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.1",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
+    "@vue/cli-plugin-pwa": "^3.0.0-beta.15",
+    "@vue/cli-plugin-typescript": "^3.0.0-beta.15",
+    "@vue/cli-service": "^3.0.0-beta.15",
+    "babel-plugin-import": "^1.8.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "typescript": "^3.0.3",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
